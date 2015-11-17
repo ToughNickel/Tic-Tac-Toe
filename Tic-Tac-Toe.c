@@ -142,8 +142,9 @@ int main()
     printf("\nSo,lets begin...\n");
     for(i=1;i<=5;i++)
     {
-        if(i%2!=0) printf("%s give your co ordinates\n(maintain space between the co ordinates)\n",q1.player);
-        else if(i%2==0) printf("%s give your co ordinates\n(maintain space between the co ordinates)\n",q2.player);
+        if(i%2!=0)
+        {
+            printf("%s give your co ordinates\n(maintain space between the co ordinates)\n",q1.player);
             p1:scanf("%d%d",&x,&y);
             if((x>2)||(y>2)||(x<0)||(y<0))
             {
@@ -158,6 +159,25 @@ int main()
             pos[x][y]=q1.mark[0];
             printf("\nSo..,\n");
             display_grid();
+        }
+        else if(i%2==0)
+        {
+            printf("%s give your co ordinates\n(maintain space between the co ordinates)\n",q2.player);
+            p2:scanf("%d%d",&x,&y);
+            if((x>2)||(y>2)||(x<0)||(y<0))
+            {
+                printf("\nyeah funny!!\tgive properly again\n");
+                goto p2;
+            }
+            else if(pos[x][y]!=' ')
+            {
+                printf("\nThe specified position is filled\nGive the co ordinates again\n");
+                goto p2;
+            }
+            pos[x][y]=q2.mark[0];
+            printf("\nSo..,\n");
+            display_grid();
+        }
     }
     ch=check();i=0;
     if(ch==1)
