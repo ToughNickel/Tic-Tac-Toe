@@ -30,7 +30,7 @@ int check()
                c[7]++;
         }
     }
-
+    
     //horizontal checking
     for(i=0;i<3;i++)
     {
