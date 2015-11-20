@@ -141,7 +141,7 @@ int main()
         printf("\nBoth players are required to give their positions to mark their position in the grid\n");
         printf("\nPositions to be given as ......X<space(atleast 1 tap)>Y  where (X,Y) are x and y coordinates\n");
     //first
-        printf("\nSo,lets begin...\n");
+        printf("\nSo,lets begin...\n\n\n");
         over=0;
         for(i=1;i<=5;i++)
         {
