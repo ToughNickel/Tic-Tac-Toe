@@ -131,7 +131,7 @@ int main()
         printf("\n\n\tSo %s which mark you gonna choose\n\t'X' or 'O'\n",q1.player);
         scanf("%s",q1.mark);
     //selection
-        strcpy(q2.mark,((strcmp(q1.mark,"x")==0)||(strcmp(q1.mark,"X")==0))?"O":"X");
+        strcpy(q2.mark,((strcmp(q1.mark,"x")==0)||(strcmp(q1.mark,"X")==0)?"O":"X"));
         printf("\nSo, %s you have %s mark\n",q2.player,q2.mark);
     //the game begins
         printf("\nLets begin...\nOkay the grid with its co ordinates have been given\n");
