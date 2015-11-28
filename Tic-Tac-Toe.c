@@ -87,10 +87,8 @@ int check()
             n=0;
    }
 
-   if(n==1)
-    return 1;
-   else
-    return 0;
+   if(n) return 1;
+   else return 0;
 }
 
 //displaying the grid
