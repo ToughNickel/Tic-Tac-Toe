@@ -107,7 +107,7 @@ int main()
     printf("\nKindly,give your names please\n");
     printf("(please tap space tab after each name)\n");
     scanf("%s",p1);
-    scanf("%s",p2);//printf("\n%d\t",p1);printf("%s\d",p2);
+    scanf("%s",p2);
     while(choice)
     {
         printf("\nSo,\n%s and %s ...Its time for toss\n",p1,p2);
