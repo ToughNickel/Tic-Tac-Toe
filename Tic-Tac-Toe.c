@@ -11,7 +11,7 @@ int i,j;
 //checkin function
 int check()
 {
-    int i,c[8]={0,0,0,0,0,0,0,0},k=0,j,n=0;
+    int i,c[8]={0,0,0,0,0,0,0,0},n=0;
     char y1,y2,y3;
 
     //diagonal checking
