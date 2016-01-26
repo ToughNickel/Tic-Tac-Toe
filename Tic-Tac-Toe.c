@@ -251,5 +251,5 @@ int toss()
 void pause_it(void)
 {
     int i = 0, j = 0;
-    for(i = 0;i < 32767;i++) for(j = 0,j < 32767;j++) {}
+    for(i = 0;i < (2*32767);i++) for(j = 0,j < 32767;j++) {}
 }
